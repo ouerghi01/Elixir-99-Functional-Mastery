@@ -89,5 +89,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Special thanks to the Elixir community for their amazing resources and support.
 
 ---
+![GitHub release](https://img.shields.io/github/v/release/ouerghi01/Elixir-99-Functional-Mastery.git)
+
 
 Happy coding! 🚀
