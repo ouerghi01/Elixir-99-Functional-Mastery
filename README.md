@@ -59,12 +59,12 @@ To run the solutions, you'll need:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/l99-elixir.git
-   cd l99-elixir
+   git clone https://github.com/ouerghi01/Elixir-99-Functional-Mastery.git
+   cd Elixir-99-Functional-Mastery
    ```
-2. Navigate to the `problems/` directory and run any problem file:
+2. Navigate to the `lib/` directory and run any problem file:
    ```bash
-   elixir problem_01.ex
+   elixir PS.ex
    ```
 3. To run tests:
    ```bash
