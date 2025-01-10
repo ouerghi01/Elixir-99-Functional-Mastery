@@ -24,7 +24,7 @@ jobs:
       - name: Set up Elixir
         uses: erlef/setup-elixir@v1
         with:
-          otp-version: '24.x' # Specify the OTP version
+          otp-version: '25.x' # Specify a compatible OTP version (25.x, 26.x, or 27.x)
           elixir-version: '1.18.x' # Specify the Elixir version
 
       # Step 3: Install dependencies
