@@ -31,21 +31,21 @@ Elixir is a functional, concurrent programming language built on the Erlang VM. 
 
 So far, the following problems have been solved:
 
-1. [Find the last element of a list](problems/problem_01.ex)
-2. [Find the last but one element of a list](problems/problem_02.ex)
-3. [Find the Kth element of a list](problems/problem_03.ex)
-4. [Find the number of elements in a list](problems/problem_04.ex)
-5. [Reverse a list](problems/problem_05.ex)
-6. [Find out whether a list is a palindrome](problems/problem_06.ex)
-7. [Flatten a nested list structure](problems/problem_07.ex)
-8. [Eliminate consecutive duplicates of list elements](problems/problem_08.ex)
-9. [Pack consecutive duplicates into sublists](problems/problem_09.ex)
-10. [Run-length encoding of a list](problems/problem_10.ex)
-11. [Modified run-length encoding](problems/problem_11.ex)
-12. [Decode a run-length encoded list](problems/problem_12.ex)
-13. [Direct run-length encoding](problems/problem_13.ex)
-14. [Duplicate the elements of a list](problems/problem_14.ex)
-15. [Replicate the elements of a list a given number of times](problems/problem_15.ex)
+1. [Find the last element of a list](lib/PS.ex)
+2. [Find the last but one element of a list](lib/PS.ex)
+3. [Find the Kth element of a list](lib/PS.ex)
+4. [Find the number of elements in a list](lib/PS.ex)
+5. [Reverse a list](lib/PS.ex)
+6. [Find out whether a list is a palindrome](lib/PS.ex)
+7. [Flatten a nested list structure](lib/PS.ex)
+8. [Eliminate consecutive duplicates of list elements](lib/PS.ex)
+9. [Pack consecutive duplicates into sublists](lib/PS.ex)
+10. [Run-length encoding of a list](lib/PS.ex)
+11. [Modified run-length encoding](lib/PS.ex)
+12. [Decode a run-length encoded list](lib/PS.ex)
+13. [Direct run-length encoding](lib/PS.ex)
+14. [Duplicate the elements of a list](lib/PS.ex)
+15. [Replicate the elements of a list a given number of times](lib/PS.ex)
 
 ## Getting Started
 
