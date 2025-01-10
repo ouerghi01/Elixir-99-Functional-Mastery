@@ -118,7 +118,6 @@ defmodule Solutions do
           end
         )
         acc ++ new_char
-
     end)
   end
 
