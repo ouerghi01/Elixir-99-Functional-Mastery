@@ -1,0 +1,40 @@
+name: Elixir CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest # Use a Windows runner
+
+    env:
+      ImageOS: win22 # Explicitly set ImageOS to a valid value
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Elixir and Erlang
+      - name: Set up Elixir
+        uses: erlef/setup-elixir@v1
+        with:
+          otp-version: '25.x' # Specify a compatible OTP version (25.x, 26.x, or 27.x)
+          elixir-version: '1.18.x' # Specify the Elixir version
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: mix deps.get
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: mix test
+
+      # Step 5: Debug ImageOS (optional, for troubleshooting)
+      - name: Debug ImageOS
+        run: echo "ImageOS=$ImageOS"
