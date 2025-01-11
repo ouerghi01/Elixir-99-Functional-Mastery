@@ -44,4 +44,15 @@ defmodule LispChallanges do
   def test_p14(list,n) do
     Solutions.p14(list,n)
   end
+  @spec test_p16(any(), any()) :: any()
+  def test_p16(list,n) do
+    Solutions.p16(list,n)
+  end
+  @spec test_p17(any(), any()) :: any()
+  def test_p17(list,n) do
+    Solutions.p17(list,n)
+  end
+  def test_p18(list,i,k) do
+    Solutions.slice_p18(list,i,k)
+  end
 end

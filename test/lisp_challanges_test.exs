@@ -76,6 +76,68 @@ defmodule LispChallangesTest do
   test "p15 : replicate 3 " do
     assert LispChallanges.test_p14(["a","b","c","d"],3) == ["a", "a", "a", "b", "b", "b", "c", "c", "c", "d", "d", "d"]
   end
+  test "p16 : Drop every 3rd element from a list" do
+    assert LispChallanges.test_p16(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 3) == ["a", "b", "d", "e", "g", "h", "k"]
+  end
+
+  test "p16 : Drop every 2nd element from a list" do
+    assert LispChallanges.test_p16(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 2) == ["a", "c", "e", "g", "i"]
+  end
+
+  test "p16 : Drop every 1st element from a list" do
+    assert LispChallanges.test_p16(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 1) == []
+  end
+
+  test "p16 : Drop every 4th element from a list" do
+    assert LispChallanges.test_p16(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 4) == ["a", "b", "c", "e", "f", "g", "i", "k"]
+  end
+
+  test "p16 : Drop every 5th element from a list" do
+    assert LispChallanges.test_p16(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 5) == ["a", "b", "c", "d", "f", "g", "h", "i"]
+  end
+  test "p17 : Split a list into two parts; the length of the first part is given" do
+    assert LispChallanges.test_p17(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 3) == {["a", "b", "c"], ["d", "e", "f", "g", "h", "i", "k"]}
+  end
+
+  test "p17 : Split a list into two parts with length 1" do
+    assert LispChallanges.test_p17(["a", "b", "c", "d"], 1) == {["a"], ["b", "c", "d"]}
+  end
+
+  test "p17 : Split a list into two parts with length 0" do
+    assert LispChallanges.test_p17(["a", "b", "c", "d"], 0) == {[], ["a", "b", "c", "d"]}
+  end
+
+  test "p17 : Split a list into two parts with length equal to list length" do
+    assert LispChallanges.test_p17(["a", "b", "c", "d"], 4) == {["a", "b", "c", "d"], []}
+  end
+
+  test "p17 : Split a list into two parts with length greater than list length" do
+    assert LispChallanges.test_p17(["a", "b", "c", "d"], 5) == {["a", "b", "c", "d"], []}
+  end
+
+  test "p17 : Split an empty list" do
+    assert LispChallanges.test_p17([], 3) == {[], []}
+  end
+  test "p18 : Extract a slice from a list" do
+    assert LispChallanges.test_p18(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 3, 7) == ["c", "d", "e", "f", "g"]
+  end
+
+  test "p18 : Extract a slice from a list with start index 1" do
+    assert LispChallanges.test_p18(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 1, 3) == ["a", "b", "c"]
+  end
+
+  test "p18 : Extract a slice from a list with end index equal to list length" do
+    assert LispChallanges.test_p18(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 8, 10) == ["h", "i", "k"]
+  end
+
+  test "p18 : Extract a slice from a list with start index greater than end index" do
+    assert LispChallanges.test_p18(["a", "b", "c", "d", "e", "f", "g", "h", "i", "k"], 7, 3) == []
+  end
+
+  test "p18 : Extract a slice from an empty list" do
+    assert LispChallanges.test_p18([], 3, 7) == []
+  end
+
 
 
 end

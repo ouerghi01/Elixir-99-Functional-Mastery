@@ -120,5 +120,110 @@ defmodule Solutions do
         acc ++ new_char
     end)
   end
+  # Drop every N'th element from a list.
+  # Example:
+  # ?- drop([a,b,c,d,e,f,g,h,i,k],3).
+  #  output -> X = [a,b,d,e,g,h,k]
+  def p16(list,x) do
+    i=round(length(list)/x)
+    Enum.reduce(1..i,{list,0},fn _,{acc,k} ->
+      index=(x+k-1)
+      current_drop_element=Enum.at(list,index)  #c
+      new_list=Enum.filter(acc,fn e -> e != current_drop_element end)
+      {new_list,k+x}
+    end)|>elem(0)
+  end
+  # P17 (*) Split a list into two parts; the length of the first part is given.
+  # Do not use any predefined predicates.
+  #
+  # Example:
+  # ?- split([a,b,c,d,e,f,g,h,i,k],3)
+  # L1 = [a,b,c]
+  # L2 = [d,e,f,g,h,i,k]
+  @doc """
+  Splits a list into two parts at the given index `n`.
+
+  ## Examples
+
+    iex> PS.p17([1, 2, 3, 4, 5], 2)
+    {[1, 2], [3, 4, 5]}
+
+    iex> PS.p17_v2([1, 2, 3, 4, 5], 2)
+    {[1, 2], [3, 4, 5]}
+
+    iex> PS.p17_v1([1, 2, 3, 4, 5], 2)
+    {[1, 2], [3, 4, 5]}
+
+  ## Parameters
+
+    - list: The list to be split.
+    - n: The index at which to split the list.
+
+  ## Returns
+
+    - A tuple with two lists. The first list contains the elements from the start of the list up to, but not including, the index `n`. The second list contains the elements from the index `n` to the end of the list.
+  """
+  def p17(list,n) do
+    f1=list|> Enum.slice(0,n)
+    f2=list|> Enum.slice(n..length(list))
+    {f1,f2}
+  end
+  def p17_v2(list,n) do
+    Enum.split(list,n)
+  end
+  def p17_v1(list, n) do
+    cond do
+      length(list) == 0 ->
+        {[], []}
+      n == 0 ->
+        {[],list}
+
+      n == 1 ->
+        first = hd(list)
+        {[first], tl(list)}
+      n > length(list) ->
+        {list,[]}
+
+      true ->
+        {one, [head | tail]} = p17_v1(list, n - 1)
+        {one ++ [head], tail}
+    end
+  end
+  @doc """
+  Extracts a slice from a list.
+
+  Given two indices, `i` and `k`, this function returns a list containing the elements between the `i`th and `k`th element of the original list (both limits included). The counting of elements starts from 1.
+
+  ## Parameters
+
+    - `list`: The original list from which the slice will be extracted.
+    - `i`: The starting index of the slice (inclusive).
+    - `k`: The ending index of the slice (inclusive).
+
+  ## Examples
+
+      iex> slice([:a, :b, :c, :d, :e, :f, :g, :h, :i, :k], 3, 7)
+      [:c, :d, :e, :f, :g]
+
+  """
+  def slice_p18(list,i,k) do
+    # len = 10 , k = 7 ,dif = 3
+    if (i > k) do
+      []
+    else
+      list|>Enum.slice(i-1,k-i+1)
+    end
+  end
+  @doc """
+Examples:
+
+  ?- rotate([a,b,c,d,e,f,g,h],3,X).
+  X = [d,e,f,g,h,a,b,c]
+
+  ?- rotate([a,b,c,d,e,f,g,h],-2,X).
+  X = [g,h,a,b,c,d,e,f]
+
+  Hint: Use the predefined predicates length/2 and append/3, as well as the result of problem P17.
+"""
 
   end
