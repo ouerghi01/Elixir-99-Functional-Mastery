@@ -30,7 +30,6 @@ Elixir is a functional, concurrent programming language built on the Erlang VM. 
 ## Problems Solved
 
 So far, the following problems have been solved:
-
 1. [Find the last element of a list](lib/PS.ex)
 2. [Find the last but one element of a list](lib/PS.ex)
 3. [Find the Kth element of a list](lib/PS.ex)
@@ -46,6 +45,12 @@ So far, the following problems have been solved:
 13. [Direct run-length encoding](lib/PS.ex)
 14. [Duplicate the elements of a list](lib/PS.ex)
 15. [Replicate the elements of a list a given number of times](lib/PS.ex)
+16. [Drop every Nth element from a list](lib/PS.ex)
+17. [Split a list into two parts](lib/PS.ex)
+18. [Extract a slice from a list](lib/PS.ex)
+19. [Rotate a list N places to the left](lib/PS.ex)
+20. [Remove the Kth element from a list](lib/PS.ex)
+21. [Insert an element at a given position into a list](lib/PS.ex)
 
 ## Getting Started
 

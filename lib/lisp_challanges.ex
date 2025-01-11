@@ -55,4 +55,14 @@ defmodule LispChallanges do
   def test_p18(list,i,k) do
     Solutions.slice_p18(list,i,k)
   end
+  def test_p19(list,n) do
+    Solutions.rotate_p19(list,n)
+  end
+  def test_p20(list,k) do
+    Solutions.p20(list,k)
+  end
+  def test_p21(element,list,pos) do
+    Solutions.p21(element,list,pos)
+  end
+
 end

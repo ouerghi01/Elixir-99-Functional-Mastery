@@ -137,6 +137,43 @@ defmodule LispChallangesTest do
   test "p18 : Extract a slice from an empty list" do
     assert LispChallanges.test_p18([], 3, 7) == []
   end
+  test "p19 rotate a list 3 times" do
+    assert LispChallanges.test_p19(["a", "b", "c", "d", "e", "f", "g", "h"],3) == ["d", "e", "f", "g", "h", "a", "b", "c"]
+  end
+  test "p19 rotate a list 1 time" do
+    assert LispChallanges.test_p19(["a", "b", "c", "d", "e", "f", "g", "h"], 1) == ["b", "c", "d", "e", "f", "g", "h", "a"]
+  end
+
+  test "p19 rotate a list 0 times" do
+    assert LispChallanges.test_p19(["a", "b", "c", "d", "e", "f", "g", "h"], 0) == ["a", "b", "c", "d", "e", "f", "g", "h"]
+  end
+  test "p20 : Remove the K'th element from a list" do
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 2) == {"b", ["a", "c", "d"]}|>elem(1)
+  end
+
+  test "p20 : Remove the 1st element from a list" do
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 1) == {"a", ["b", "c", "d"]}|>elem(1)
+  end
+
+  test "p20 : Remove the last element from a list" do
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 4) == {"d", ["a", "b", "c"]}|>elem(1)
+  end
+
+  test "p20 : Remove an element from a list with invalid index" do
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 5) == {nil, ["a", "b", "c", "d"]}|>elem(1)
+  end
+
+  test "p20 : Remove an element from an empty list" do
+    assert LispChallanges.test_p20([], 1) == {nil, []}|>elem(1)
+  end
+  test "p21 : Insert an element at the 2nd position" do
+    assert LispChallanges.test_p21("alfa", ["a", "b", "c", "d"], 2) == ["a", "alfa", "b", "c", "d"]
+  end
+
+  test "p21 : Insert an element at the 1st position" do
+    assert LispChallanges.test_p21("alfa", ["a", "b", "c", "d"], 1) == ["alfa", "a", "b", "c", "d"]
+  end
+
 
 
 

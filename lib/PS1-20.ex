@@ -225,5 +225,34 @@ Examples:
 
   Hint: Use the predefined predicates length/2 and append/3, as well as the result of problem P17.
 """
+  def rotate_p19(list,n) do
+    {one,two}=p17_v2(list,n)
+    two ++ one
+  end
+  # (*) Remove the K'th element from a list.
+  # Example:
+  # ?- remove_at(X, [a, b, c, d], 2, R).
+  # X = b
+  # R = [a, c, d]
+  def p20(list,k) do
+    List.delete_at(list,k-1)
+  end
+  @doc """
+  Inserts an element at a given position into a list.
+
+  ## Parameters
+    - element: The element to be inserted.
+    - list: The list into which the element will be inserted.
+    - position: The position at which the element should be inserted (1-based index).
+
+  ## Examples
+
+      iex> insert_at(:alfa, [:a, :b, :c, :d], 2)
+      [:a, :alfa, :b, :c, :d]
+
+  """
+  def p21(element,list,pos) do
+    List.insert_at(list,pos-1,element)
+  end
 
   end
