@@ -64,5 +64,8 @@ defmodule LispChallanges do
   def test_p21(element,list,pos) do
     Solutions.p21(element,list,pos)
   end
+  def test_p23(list,n) do
+    Solutions.p23_rnd_select(list,n)
+  end
 
 end

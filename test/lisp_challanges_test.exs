@@ -148,30 +148,50 @@ defmodule LispChallangesTest do
     assert LispChallanges.test_p19(["a", "b", "c", "d", "e", "f", "g", "h"], 0) == ["a", "b", "c", "d", "e", "f", "g", "h"]
   end
   test "p20 : Remove the K'th element from a list" do
-    assert LispChallanges.test_p20(["a", "b", "c", "d"], 2) == {"b", ["a", "c", "d"]}|>elem(1)
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 2) == {"b", ["a", "c", "d"]}
   end
 
   test "p20 : Remove the 1st element from a list" do
-    assert LispChallanges.test_p20(["a", "b", "c", "d"], 1) == {"a", ["b", "c", "d"]}|>elem(1)
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 1) == {"a", ["b", "c", "d"]}
   end
 
   test "p20 : Remove the last element from a list" do
-    assert LispChallanges.test_p20(["a", "b", "c", "d"], 4) == {"d", ["a", "b", "c"]}|>elem(1)
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 4) == {"d", ["a", "b", "c"]}
   end
 
   test "p20 : Remove an element from a list with invalid index" do
-    assert LispChallanges.test_p20(["a", "b", "c", "d"], 5) == {nil, ["a", "b", "c", "d"]}|>elem(1)
+    assert LispChallanges.test_p20(["a", "b", "c", "d"], 5) == {nil, ["a", "b", "c", "d"]}
   end
 
   test "p20 : Remove an element from an empty list" do
-    assert LispChallanges.test_p20([], 1) == {nil, []}|>elem(1)
+    assert LispChallanges.test_p20([], 1) == {nil, []}
   end
   test "p21 : Insert an element at the 2nd position" do
     assert LispChallanges.test_p21("alfa", ["a", "b", "c", "d"], 2) == ["a", "alfa", "b", "c", "d"]
   end
 
+
+
   test "p21 : Insert an element at the 1st position" do
     assert LispChallanges.test_p21("alfa", ["a", "b", "c", "d"], 1) == ["alfa", "a", "b", "c", "d"]
+  end
+  test "p23 : Extract a given number of randomly selected elements from a list" do
+    list = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    result = LispChallanges.test_p23(list, 3)
+    assert length(result) == 3
+    assert Enum.all?(result, fn x -> x in list end)
+  end
+  test "p24 Draw N different random numbers from the set 1..M" do
+    result=Solutions.p24_rnd_select(6,49)
+    assert length(result) == 6
+    assert Enum.all?(result,fn term -> term in Enum.to_list(1..49) end)
+  end
+  test "p25 Generate a random permutation of the elements of a list" do
+    ls = ~w(a b c d e f)
+    result=Solutions.p25_rnd_permut(ls)
+    assert length(result) == 6
+    assert Enum.all?(result,fn term -> term in ls end)
+    IO.inspect(result)
   end
 
 

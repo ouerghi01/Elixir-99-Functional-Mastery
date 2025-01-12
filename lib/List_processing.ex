@@ -235,7 +235,8 @@ Examples:
   # X = b
   # R = [a, c, d]
   def p20(list,k) do
-    List.delete_at(list,k-1)
+    element_removed=Enum.at(list,k-1)
+   {element_removed, List.delete_at(list,k-1)}
   end
   @doc """
   Inserts an element at a given position into a list.
@@ -253,6 +254,23 @@ Examples:
   """
   def p21(element,list,pos) do
     List.insert_at(list,pos-1,element)
+  end
+  def p23_rnd_select(list,n) do
+    Enum.reduce(0..(n-1),{list,[]},fn _ ,{acc_list,resulta}->
+
+      {element_removed,new_list}=p20(acc_list,:rand.uniform(length(acc_list)))
+      {new_list,resulta++[element_removed]}
+    end)|>elem(1)
+  end
+  def p24_rnd_select(n,m) do
+    range_list_p22=Enum.to_list(1..m)
+    p23_rnd_select(range_list_p22,n)
+  end
+  @doc """
+  p25 Generate a random permutation of the elements of a list
+  """
+  def p25_rnd_permut(list) do
+    p23_rnd_select(list,length(list))
   end
 
   end

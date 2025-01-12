@@ -28,29 +28,32 @@ Elixir is a functional, concurrent programming language built on the Erlang VM. 
 - **`README.md`**: This file, providing an overview of the project.
 
 ## Problems Solved
-
 So far, the following problems have been solved:
-1. [Find the last element of a list](lib/PS.ex)
-2. [Find the last but one element of a list](lib/PS.ex)
-3. [Find the Kth element of a list](lib/PS.ex)
-4. [Find the number of elements in a list](lib/PS.ex)
+1. [Find the last element of a list](lib/List_processing.ex)
+2. [Find the last but one element of a list](lib/List_processing.ex)
+3. [Find the Kth element of a list](lib/List_processing.ex)
+4. [Find the number of elements in a list](lib/List_processing.ex)
 5. [Reverse a list](lib/PS.ex)
-6. [Find out whether a list is a palindrome](lib/PS.ex)
+6. [Find out whether a list is a palindrome](lib/List_processing.ex)
 7. [Flatten a nested list structure](lib/PS.ex)
-8. [Eliminate consecutive duplicates of list elements](lib/PS.ex)
-9. [Pack consecutive duplicates into sublists](lib/PS.ex)
-10. [Run-length encoding of a list](lib/PS.ex)
-11. [Modified run-length encoding](lib/PS.ex)
-12. [Decode a run-length encoded list](lib/PS.ex)
-13. [Direct run-length encoding](lib/PS.ex)
-14. [Duplicate the elements of a list](lib/PS.ex)
-15. [Replicate the elements of a list a given number of times](lib/PS.ex)
-16. [Drop every Nth element from a list](lib/PS.ex)
-17. [Split a list into two parts](lib/PS.ex)
-18. [Extract a slice from a list](lib/PS.ex)
-19. [Rotate a list N places to the left](lib/PS.ex)
-20. [Remove the Kth element from a list](lib/PS.ex)
-21. [Insert an element at a given position into a list](lib/PS.ex)
+8. [Eliminate consecutive duplicates of list elements](lib/List_processing.ex)
+9. [Pack consecutive duplicates into sublists](lib/List_processing.ex)
+10. [Run-length encoding of a list](lib/List_processing.ex)
+11. [Modified run-length encoding](lib/List_processing.ex)
+12. [Decode a run-length encoded list](lib/List_processing.ex)
+13. [Direct run-length encoding](lib/List_processing.ex)
+14. [Duplicate the elements of a list](lib/List_processing.ex)
+15. [Replicate the elements of a list a given number of times](lib/List_processing.ex)
+16. [Drop every Nth element from a list](lib/List_processing.ex)
+17. [Split a list into two parts](lib/List_processing.ex)
+18. [Extract a slice from a list](lib/List_processing.ex)
+19. [Rotate a list N places to the left](lib/List_processing.ex)
+20. [Remove the Kth element from a list](lib/List_processing.ex)
+21. [Insert an element at a given position into a list](lib/List_processing.ex)
+22. [Create a list containing all integers within a given range](lib/List_processing.ex)
+23. [Extract a given number of randomly selected elements from a list](lib/List_processing.ex)
+24. [Draw N different random numbers from the set 1..M](lib/List_processing.ex)
+25. [Generate a random permutation of the elements of a list](lib/List_processing.ex)
 
 ## Getting Started
 
@@ -94,7 +97,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Special thanks to the Elixir community for their amazing resources and support.
 
 ---
-![GitHub release](https://img.shields.io/github/v/release/ouerghi01/Elixir-99-Functional-Mastery.git)
 
 
 Happy coding! 🚀
