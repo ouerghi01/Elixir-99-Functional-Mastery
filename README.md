@@ -57,6 +57,12 @@ So far, the following problems have been solved:
 26. [Generate the combinations of K distinct objects chosen from the N elements of a list](lib/List_processing.ex)
 27. [Group the elements of a set into disjoint subsets](lib/List_processing.ex)
 28. [Sort a list of lists according to length of sublists](lib/List_processing.ex)
+29. [Determine whether a given integer number is prime](lib/Arithmetic_processing.ex)
+30. [Determine the greatest common divisor of two positive integer numbers](lib/Arithmetic_processing.ex)
+31. [Determine whether two positive integer numbers are coprime](lib/Arithmetic_processing.ex)
+32. [Calculate Euler's totient function phi(m)](lib/Arithmetic_processing.ex)
+33. [Determine the prime factors of a given positive integer](lib/Arithmetic_processing.ex)
+34. [Determine the prime factors of a given positive integer (2)](lib/Arithmetic_processing.ex)
 
 ## Getting Started
 
