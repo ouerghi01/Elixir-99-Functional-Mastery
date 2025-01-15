@@ -44,4 +44,8 @@ defmodule PrimeFactorsTest do
     assert PrimeFactors.prime_factors_mult(315) == [[3, 2], [5, 1], [7, 1]]
     assert PrimeFactors.prime_factors_mult(60) == [[2, 2], [3, 1], [5, 1]]
   end
+  test "PrimeFactors.phi/1" do
+    assert PrimeFactors.phi(9) == 6
+    assert PrimeFactors.phi(10) == 4
+  end
 end
