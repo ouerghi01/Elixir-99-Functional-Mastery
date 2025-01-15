@@ -56,6 +56,7 @@ So far, the following problems have been solved:
 25. [Generate a random permutation of the elements of a list](lib/List_processing.ex)
 26. [Generate the combinations of K distinct objects chosen from the N elements of a list](lib/List_processing.ex)
 27. [Group the elements of a set into disjoint subsets](lib/List_processing.ex)
+28. [Sort a list of lists according to length of sublists](lib/List_processing.ex)
 
 ## Getting Started
 
