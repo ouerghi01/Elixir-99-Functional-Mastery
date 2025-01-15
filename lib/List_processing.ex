@@ -272,5 +272,69 @@ Examples:
   def p25_rnd_permut(list) do
     p23_rnd_select(list,length(list))
   end
+  @doc """
+
+(**)
+Generate the combinations of K distinct objects chosen from the N elements of a list
+In how many ways can a committee of 3 be chosen from a group of 12 people?
+We all know that there are C(12,3) = 220 possibilities (C(N,K) denotes the well-known binomial coefficients).
+For pure mathematicians, this result may be great. But we want to really generate all the possibilities (via backtracking).
+
+Example:
+?- combination(3,[a,b,c,d,e,f],L).
+L = [a,b,c] ;
+L = [a,b,d] ;
+L = [a,b,e] ;
+"""
+  def combination(0, _), do: [[]]
+  def combination(_, []), do: []
+  def combination(k, [head | tail]) do
+    for sub_combination <- combination(k - 1, tail) do
+      IO.inspect(sub_combination)
+      [head | sub_combination]
+    end ++ combination(k, tail)
+  end
+  def group(list,sizes) do
+    Enum.reduce(
+      sizes,{[],0},
+      fn size ,{acc,k} ->
+        current_group=Enum.slice(list,k..(k+size-1)) # 1 .. (4)
+        {acc ++ [current_group] ,k+size}
+      end
+    )|>elem(0)
+  end
+
+  def lsort(inlist ) do
+      inlist|> Enum.sort_by(
+        &length/1
+      )
+  end
+  def lfsort(inlist) do
+    newlist = lsort(inlist)
+    maps=Enum.reduce(newlist,%{},fn l ,map ->
+      size = length(l)
+      if(Map.get(map,size) == nil) do
+        new_map = Map.put(map,size,[l])
+        new_map
+      else
+        ll = Map.get(map,size) ++ [l]
+        new_map = Map.put(map,size,ll)
+        new_map
+      end
+    end)
+    maps_list = Map.values(maps) |> Enum.sort_by(&length/1)
+    maps_list |> Enum.reduce([],fn e ,acc ->
+      flatened = e |> List.flatten()
+      size_flatened = length(flatened) # 6
+      sizes= Enum.map(0..(length(e)-1) ,fn _ -> div(size_flatened,length(e))  end)
+
+      cc=flatened |> group(sizes)
+      acc ++ cc
+
+    end)
 
   end
+
+  end
+lll = [["a", "b", "c"], ["d", "e"], ["f", "g", "h"], ["d", "e"], ["i", "j", "k", "l"], ["m", "n"], ["o"]]
+IO.inspect(Solutions.lfsort(lll))
