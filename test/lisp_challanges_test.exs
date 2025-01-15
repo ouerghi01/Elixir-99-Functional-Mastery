@@ -193,6 +193,9 @@ defmodule LispChallangesTest do
     assert Enum.all?(result,fn term -> term in ls end)
     IO.inspect(result)
   end
+  test "combination/2 generates combinations of k elements from a list" do
+    assert length(Solutions.combination(3, [1, 2, 3, 4, 5])) == 6
+  end
 
 
 
