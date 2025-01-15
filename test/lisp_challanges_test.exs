@@ -194,7 +194,7 @@ defmodule LispChallangesTest do
     IO.inspect(result)
   end
   test "combination/2 generates combinations of k elements from a list" do
-    assert length(Solutions.combination(3, [1, 2, 3, 4, 5])) == 6
+    assert length(Solutions.combination(3, [1, 2, 3, 4, 5])) == 10
   end
 
 
