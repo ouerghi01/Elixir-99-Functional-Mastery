@@ -41,7 +41,7 @@ defmodule Logic do
 
       res_1 = if is_list(res1), do: Enum.at(res1, 0), else: res1
       res_2 = if is_list(res2), do: Enum.at(res2, 0), else: res2
-      IO.puts("res1ç1 #{res_1}")
+      IO.puts("two_string  #{two_string}")
       IO.puts("# res2 #{res_2}")
       oo=equal(res_1,res_2)
 
@@ -51,12 +51,12 @@ defmodule Logic do
       keys = Map.keys(@maps_ops)
       Enum.reduce(expr_splitted, {[], false, []}, fn e, {values, current_res, opers} ->
         cond do
-          (!String.contains?(e, keys) && length(opers) == 0) ->
+          (!Enum.member?(keys, e) && length(opers) == 0) ->
             new_values = values ++ [e == "true"]
             {new_values, current_res, opers}
 
-          (!String.contains?(e, keys) && length(opers) == 1) ->
-            v = [e == "true"]
+          (!Enum.member?(keys, e) && length(opers) == 1) ->
+            v = e == "true"
             op = Enum.at(opers, 0)
             latest_bool = Enum.at(values, 0)
             operator_fn = Map.fetch!(@maps_ops, op)
@@ -65,8 +65,7 @@ defmodule Logic do
             new_current = new_v
             {new_values, new_current, []}
 
-
-          (String.contains?(e, keys) && length(values) == 2 && length(opers) == 0) ->
+          (Enum.member?(keys, e) && length(values) == 2 && length(opers) == 0) ->
             [b, a | _] = Enum.reverse(values)
             operator_fn = Map.fetch!(@maps_ops, e)
             new_v = operator_fn.(a, b)
@@ -74,9 +73,12 @@ defmodule Logic do
             new_current = new_v
             {new_values, new_current, []}
 
-          true ->
+          Enum.member?(keys, e) ->
             newopers = opers ++ [e]
             {values, current_res, newopers}
+
+          true ->
+            {values, current_res, opers}
         end
 
       end)
@@ -127,5 +129,5 @@ defmodule Logic do
 
 end
 expression = "A and (B or C) equ A and B or A and C"
-nn = Logic.map_expression([false, true , false],expression)
+nn = Logic.map_expression([true, false , true],expression)
 IO.inspect(Logic.logical_expression(nn))
