@@ -205,18 +205,22 @@ defmodule Logic do
   end
 
 
-  def huffman_printer(root, val) do
+  def huffman_printer(root, val,acc = []) do
     v_byte = Map.get(root, :byte, "")
     new_val = "#{val}#{v_byte}"
     node = Map.get(root, :node)
       if (Map.get(node, :left) != nil) do
-        huffman_printer(Map.get(node, :left), new_val)
+        huffman_printer(Map.get(node, :left), new_val, acc)
       end
       if (Map.get(node, :right) != nil) do
-        huffman_printer(Map.get(node, :right), new_val)
+        huffman_printer(Map.get(node, :right), new_val, acc)
       end
       if( Map.get(node, :right) == nil and Map.get(node, :left) == nil) do
         IO.puts("#{Map.get(node, :char)} -> #{new_val}")
+        acc ++ %{
+          char: Map.get(node, :char),
+          byte_val: new_val
+        }
       end
   end
 
