@@ -1,4 +1,7 @@
 defmodule Logic do
+  def start_link do
+    Agent.start_link(fn -> %{} end,name: __MODULE__)
+  end
   @maps_ops %{
     "and" => &Logic.and_op/2,
     "or" => &Logic.or_op/2,
@@ -127,7 +130,55 @@ defmodule Logic do
     end
   end
 
+
+  @doc """
+  Generates the n-bit Gray code sequence.
+
+  Gray code is a binary numeral system where two successive values differ in only one bit.
+  This implementation is based on the algorithm described in Problem 49.
+
+  ## Parameters
+    - n: The number of bits in the Gray code sequence.
+
+  ## Examples
+
+      iex> LogicCodes.gray(1)
+      [0, 1]
+
+      iex> LogicCodes.gray(2)
+      ["00", "01", "11", "10"]
+
+      iex> LogicCodes.gray(3)
+      ["000", "001", "011", "010", "110", "111", "101", "100"]
+
+  """
+  #https://www.geeksforgeeks.org/generate-n-bit-gray-codes/
+  # https://stackoverflow.com/questions/69163081/how-can-values-be-cached-in-an-elixir-function#:~:text=Short%20answer%20is%20-%20you%20can%27t.%20Functional%20means,is%20to%20wrap%20that%20state%20in%20a%20process.
+  def gray(1) do
+    [0,1]
+  end
+  def gray(n) do
+     # Check if the result is already cached
+    case Agent.get(__MODULE__,&Map.get(&1,n)) do
+      nil ->
+        previous_gray = gray(n - 1)
+        reversed_gray = Enum.reverse(previous_gray)
+        {first_half, second_half} = Enum.reduce(0..(length(previous_gray) - 1), {[], []},
+          fn index, {acc1, acc2} ->
+            original = Enum.at(previous_gray, index)
+            reversed = Enum.at(reversed_gray, index)
+            new_original = "0#{original}"
+            new_reversed = "1#{reversed}"
+            {acc1 ++ [new_original], acc2 ++ [new_reversed]}
+          end)
+
+        result= first_half ++ second_half
+        Agent.update(__MODULE__, &Map.put(&1, n, result))
+        result
+      cached_result ->
+        cached_result
+    end
+
+  end
 end
-expression = "A and (B or C) equ A and B or A and C"
-nn = Logic.map_expression([true, false , true],expression)
-IO.inspect(Logic.logical_expression(nn))
+#{:ok,_pid} = Logic.start_link()

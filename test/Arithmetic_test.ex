@@ -48,4 +48,9 @@ defmodule PrimeFactorsTest do
     assert PrimeFactors.phi(9) == 6
     assert PrimeFactors.phi(10) == 4
   end
+  test "gray/1" do
+    assert Logic.gray(1) == [0, 1]
+    assert Logic.gray(3) == ["000", "001", "011", "010", "110", "111", "101", "100"]
+
+  end
 end
