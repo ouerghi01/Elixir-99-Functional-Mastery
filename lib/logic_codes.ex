@@ -1,3 +1,4 @@
+
 defmodule Logic do
   def start_link do
     Agent.start_link(fn -> %{} end,name: __MODULE__)
@@ -180,5 +181,52 @@ defmodule Logic do
     end
 
   end
+  # list = [%{char:a,value:5},{b,9},..]
+  def buildTree(list) do
+    new_list = Enum.sort_by(list,&(&1.value))
+    Enum.reduce_while(new_list, new_list, fn _, acc ->
+      if length(acc) == 1 do
+        {:halt, acc}
+      else
+        [first_node, second_node | rest] = acc
+        new_node = %{
+          value: Map.get(first_node, :value) + Map.get(second_node, :value),
+          left: %{
+            byte: 0,
+            node: first_node
+          },
+          right: %{byte: 1 ,node: second_node}
+        }
+        nn_list = rest ++ [new_node]
+        nn = Enum.sort_by(nn_list,&(&1.value))
+        {:cont,nn}
+      end
+    end) |> Enum.at(0)
+  end
+
+
+  def huffman_printer(root, val) do
+    v_byte = Map.get(root, :byte, "")
+    new_val = "#{val}#{v_byte}"
+    node = Map.get(root, :node)
+      if (Map.get(node, :left) != nil) do
+        huffman_printer(Map.get(node, :left), new_val)
+      end
+      if (Map.get(node, :right) != nil) do
+        huffman_printer(Map.get(node, :right), new_val)
+      end
+      if( Map.get(node, :right) == nil and Map.get(node, :left) == nil) do
+        IO.puts("#{Map.get(node, :char)} -> #{new_val}")
+      end
+  end
+
+
 end
-#{:ok,_pid} = Logic.start_link()
+# {:ok, _pid} = Logic.start_link()
+# list = [%{char: "a", value: 45}, %{char: "b", value: 13}, %{char: "c", value: 12}, %{char: "d", value: 16}, %{char: "e", value: 9}, %{char: "f", value: 5}]
+# tree = Logic.buildTree(list)
+# left_tree = Map.get(tree, :left)
+# right_tree = Map.get(tree, :right)
+
+# Logic.huffman_printer(left_tree, "")
+# Logic.huffman_printer(right_tree, "")
