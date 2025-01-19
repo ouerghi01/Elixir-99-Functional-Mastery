@@ -46,8 +46,10 @@ defmodule Binarytrees do
     end
   end
 
+
   defp distrib(n, n), do: [{n, n}]
   defp distrib(n1, n2), do: [{n1, n2}, {n2, n1}]
+
   def symmetric(nil), do: mirror(nil, nil)
   def symmetric(%{left: left , right: right}), do: mirror(left,right)
 
@@ -91,10 +93,37 @@ defmodule Binarytrees do
   #Generate-and-test paradigm
   def sym_cbal_trees(n), do: cbal_tree(n) |> Enum.filter(fn tree -> symmetric(tree) end)
 
+  def is_high_balanced(nil), do: true
+  def is_high_balanced(%{value: _,left: left ,right: right}) do
+    abs(high_node(left) - high_node(right)) <=1
+  end
+  def high_node(nil), do: 0
+  def high_node(%{value: _,left: nil ,right: nil}) ,do: 1
 
+  def high_node(%{value: _,left: left ,right: right}) do
+    high_left = high_node(left) +1
+    high_right = high_node(right) +1
+    max(high_left,high_right)
 
+  end
+  def hbal_tree(0), do: [:nil]
+  def hbal_tree(1), do: [%{value: "x",left: nil ,right: nil}]
 
-
+  def hbal_tree(n)  when n > 1 do
+    n1 = n-1 # 1
+    n2 = n-2 # 0
+    for {nl, nr} <-distrib(n1, n1) ++ distrib(n1, n2) ++ distrib(n2, n2),
+        left <- hbal_tree(nl),
+        right <- hbal_tree(nr) do
+      %{value: "x", left: left, right: right}
+    end
+  end
 
 
 end
+#https://dev.to/crisefd/tree-traversal-with-elixir-lc5
+#https://www.geeksforgeeks.org/applications-of-bst/
+#https://www.geeksforgeeks.org/introduction-to-height-balanced-binary-tree/
+
+
+IO.inspect(Binarytrees.hbal_tree(2) |> Enum.uniq())

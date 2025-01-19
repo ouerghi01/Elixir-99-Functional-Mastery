@@ -1,3 +1,6 @@
 %{
   "graphvix": {:hex, :graphvix, "1.1.0", "07585df0c47697ca686f0df271d95b7e15fd7ae9ea6fdff83d42ba507380f684", [:mix], [], "hexpm", "f7aa28f22f65332548a5d05ca6c92d1e1c9c5ce19a36803c4e82d59c322e58aa"},
+  "jason": {:hex, :jason, "1.4.4", "b9226785a9aa77b6857ca22832cffa5d5011a667207eb2a0ad56adb5db443b8a", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "c5eb0cab91f094599f94d55bc63409236a8ec69a21a67814529e8d5f6cc90b3b"},
+  "table": {:hex, :table, "0.1.2", "87ad1125f5b70c5dea0307aa633194083eb5182ec537efc94e96af08937e14a8", [:mix], [], "hexpm", "7e99bc7efef806315c7e65640724bf165c3061cdc5d854060f74468367065029"},
+  "vega_lite": {:hex, :vega_lite, "0.1.11", "2b261d21618f6fa9f63bb4542f0262982d2e40aea3f83e935788fe172902b3c2", [:mix], [{:table, "~> 0.1.0", [hex: :table, repo: "hexpm", optional: false]}], "hexpm", "d18c3f11369c14bdf36ab53010c06bf5505c221cbcb32faac7420cf6926b3c50"},
 }
