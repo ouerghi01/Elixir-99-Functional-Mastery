@@ -110,4 +110,23 @@ defmodule Binarytrees do
     end)
   end
 end
-IO.inspect(Binarytrees.cbal_tree(5) |> Enum.uniq())
+# prolog to elixir
+defmodule BalancedBinaryTree do
+  def cbal_tree(0), do: [:nil]
+
+  def cbal_tree(n) when n > 0 do
+    n0 = n - 1
+    n1 = div(n0, 2)
+    n2 = n0 - n1
+
+    for {nl, nr} <- distrib(n1, n2),
+        left <- cbal_tree(nl),
+        right <- cbal_tree(nr) do
+      {:x, left, right}
+    end
+  end
+
+  defp distrib(n, n), do: [{n, n}]
+  defp distrib(n1, n2), do: [{n1, n2}, {n2, n1}]
+end
+IO.inspect(BalancedBinaryTree.cbal_tree(2))
