@@ -53,4 +53,5 @@ defmodule PrimeFactorsTest do
     assert Logic.gray(3) == ["000", "001", "011", "010", "110", "111", "101", "100"]
 
   end
+
 end
