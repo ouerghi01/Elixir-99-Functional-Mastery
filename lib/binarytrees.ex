@@ -103,7 +103,7 @@ defmodule Binarytrees do
   def high_node(%{value: _,left: left ,right: right}) do
     high_left = high_node(left) +1
     high_right = high_node(right) +1
-    max(high_left,high_right)
+    {max(high_left,high_right),max(high_left,high_right)}
 
   end
   def hbal_tree(0), do: [:nil]
@@ -120,10 +120,45 @@ defmodule Binarytrees do
   end
 
 
+
+  #
+  # Count the leaves of a binary tree
+  def count_leaves(nil), do: 0
+  def count_leaves(%{value: _ ,left: nil ,right: nil}), do: 1
+  def count_leaves(%{value: _ ,left: left ,right: right}), do: count_leaves(left) + count_leaves(right)
+
+  #Collect the leaves of a binary tree in a list
+  def leaves(nil,_), do: []
+  def leaves(%{value: x ,left: nil ,right: nil},acc), do: acc ++ [%{value:  x ,left: nil ,right: nil}]
+  def leaves(%{value: _ ,left: left ,right: right},acc ) do
+     leaves(left,leaves(right,acc))
+
+  end
+  def internals(nil,_), do: []
+  def internals(%{value: _ ,left: nil ,right: nil},acc), do: acc
+  def internals(%{value: x ,left: nil ,right: _right},acc), do: acc ++ [%{value:  x ,left: nil ,right: nil}]
+  def internals(%{value: x ,left: _right ,right: nil},acc), do: acc ++ [%{value:  x ,left: nil ,right: nil}]
+  def internals(%{value: x ,left: left ,right: right},acc), do:   internals(left,internals(right,acc)) ++[%{value:  x ,left: nil ,right: nil}]
+
+
+
+
+
 end
 #https://dev.to/crisefd/tree-traversal-with-elixir-lc5
 #https://www.geeksforgeeks.org/applications-of-bst/
 #https://www.geeksforgeeks.org/introduction-to-height-balanced-binary-tree/
 
 
-IO.inspect(Binarytrees.hbal_tree(2) |> Enum.uniq())
+# IO.inspect(Binarytrees.hbal_tree(2) |> Enum.uniq())
+
+tree=%{
+  value: 2,
+  left: %{
+    value: 1,
+    left: %{value: 0, left: nil, right: nil},
+    right: %{value: 3, left: nil, right: nil}
+  },
+  right: %{value: 4, left: nil, right: nil}
+}
+IO.inspect(Binarytrees.internals(tree,[]))
