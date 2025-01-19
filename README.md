@@ -63,7 +63,22 @@ So far, the following problems have been solved:
 32. [Calculate Euler's totient function phi(m)](lib/Arithmetic_processing.ex)
 33. [Determine the prime factors of a given positive integer](lib/Arithmetic_processing.ex)
 34. [Determine the prime factors of a given positive integer (2)](lib/Arithmetic_processing.ex)
-
+35. [Calculate Euler's totient function phi(m) (improved)](lib/Arithmetic_processing.ex)
+36. [Compare the two methods of calculating Euler's totient function](lib/Arithmetic_processing.ex)
+37. [A list of prime numbers](lib/Arithmetic_processing.ex)
+38. [Goldbach's conjecture](lib/Arithmetic_processing.ex)
+39. [A list of Goldbach compositions](lib/Arithmetic_processing.ex)
+40. [Truth tables for logical expressions](lib/logic_codes.ex)
+41. [Truth tables for logical expressions (2)](lib/logic_codes.ex)
+42. [Truth tables for logical expressions (3)](lib/logic_codes.ex)
+43. [Gray code](lib/logic_codes.ex)
+44. [Huffman code](lib/logic_codes.ex)
+45. [Check whether a given term represents a binary tree](lib/binarytrees.ex)
+46. [Construct completely balanced binary trees](lib/binarytrees.ex)
+47. [Symmetric binary trees](lib/binarytrees.ex)
+48. [Binary search trees (dictionaries)](lib/binarytrees.ex)
+49. [Generate-and-test paradigm](lib/binarytrees.ex)
+50. [Construct height-balanced binary trees](lib/binarytrees.ex)
 
 ## Getting Started
 
