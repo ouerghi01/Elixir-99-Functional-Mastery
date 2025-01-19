@@ -32,86 +32,6 @@ defmodule Binarytrees do
 
     end
   end
-  def node_number(nil), do: 0
-  def node_number(%{left: left, right: right}) do
-    node_number(left) + node_number(right) + 1
-  end
-  def node_number(_), do: raise("Invalid tree structure")
-
-  # check if a tree is balanced binary tree
-  def is_balanced(%{left: left, right: right}) do
-    abs(node_number(left) - node_number(right)) <= 1
-  end
-
-
-  def cbal_tree(0), do: []
-  def cbal_tree(1), do: [%{value: "x", left: nil, right: nil}]
-
-  def cbal_tree(n) when n > 1 do
-    acc = cbal_tree(n-1)
-    Enum.reduce(acc,[],
-    fn node,new_shit ->
-      %{left: left,right: right} = node
-      newfuck=if(right == nil) do
-        new_right = %{value: "x" ,left: nil ,right: nil}
-        final_node = Map.put(node, :right, new_right)
-        if(is_balanced(final_node) and !Enum.member?(acc,final_node)) do
-          new_shit ++ [final_node]
-        else
-          new_shit
-        end
-      else
-        new_right = %{value: "x" ,left: nil ,right: nil}
-        final_node_right = Map.put(right, :right, new_right)
-        final_node = Map.put(node, :right, final_node_right)
-        if(is_balanced(final_node) and !Enum.member?(new_shit,final_node)) do
-          new_shit ++ [final_node]
-        else
-          new_shit
-        end
-        final_node_right_left = Map.put(right, :left, new_right)
-        final_node_left = Map.put(node, :right, final_node_right_left)
-        if(is_balanced(final_node_left) and !Enum.member?(new_shit,final_node_left)) do
-          new_shit ++ [final_node]
-        else
-          new_shit
-        end
-
-      end
-      new_fuck_u=if(left == nil) do
-        new_left = %{value: "x" ,left: nil ,right: nil}
-        final_node = Map.put(node, :left, new_left)
-        if(is_balanced(final_node) and !Enum.member?(newfuck,final_node)) do
-          newfuck ++ [final_node]
-        else
-          newfuck
-        end
-      else
-        new_left = %{value: "x" ,left: nil ,right: nil}
-        final_node_left = Map.put(left, :right, new_left)
-        final_node = Map.put(node, :left, final_node_left)
-        if(is_balanced(final_node) and !Enum.member?(newfuck,final_node)) do
-          newfuck ++ [final_node]
-        else
-          newfuck
-        end
-        final_node_right_left = Map.put(left, :left, new_left)
-        final_node_left = Map.put(node, :left, final_node_right_left)
-        if(is_balanced(final_node_left) and !Enum.member?(newfuck,final_node_left)) do
-          newfuck ++ [final_node]
-        else
-          newfuck
-        end
-
-      end
-      new_fuck_u
-
-
-    end)
-  end
-end
-# prolog to elixir
-defmodule BalancedBinaryTree do
   def cbal_tree(0), do: [:nil]
 
   def cbal_tree(n) when n > 0 do
@@ -122,11 +42,59 @@ defmodule BalancedBinaryTree do
     for {nl, nr} <- distrib(n1, n2),
         left <- cbal_tree(nl),
         right <- cbal_tree(nr) do
-      {:x, left, right}
+      %{value: "x", left: left, right: right}
     end
   end
 
   defp distrib(n, n), do: [{n, n}]
   defp distrib(n1, n2), do: [{n1, n2}, {n2, n1}]
+  def symmetric(nil), do: mirror(nil, nil)
+  def symmetric(%{left: left , right: right}), do: mirror(left,right)
+
+  defp mirror(nil, nil), do: true
+  defp mirror(nil, _), do: false
+  defp mirror(_, nil), do: false
+  defp mirror(%{value: _,left: left ,right: right}, %{value: _,left: left1 ,right: right1}), do: mirror(left,right1) and mirror(left1,right)
+  def construct([head|t], nil), do: construct(t, %{value: head, left: nil, right: nil})
+  def construct([], nil), do: nil
+  def construct([], tree), do: tree
+  def construct([head | tail], %{value: value, left: left, right: right}) when head < value do
+    construct(tail, %{value: value, left: construct([head], left), right: right})
+  end
+
+  def construct([head | tail], %{value: value, left: left, right: right}) when head > value do
+    construct(tail, %{value: value, left: left, right: construct([head], right)})
+  end
+
+  def construct([head | tail], %{value: head, left: left, right: right}) do
+    min_1 = Enum.find(tail, fn x -> x < head end)
+    max_1 = Enum.find(tail, fn x -> x > head and x <= Enum.max(tail) end)
+    new_tree = cond do
+      left == nil and right == nil -> construct(tail,
+      %{value: head, left: %{value: min_1, left: nil, right: nil},
+      right: %{value: max_1, left: nil, right: nil}})
+      left == nil and right !=nil ->
+        new_node =%{value: head, left: %{value: min_1 ,left: nil ,right: nil}, right: right}
+        construct(tail,new_node)
+      right == nil and left !=nil ->
+        new_node=%{value: head, right: %{value: max_1 ,left: nil ,right: nil}, left: left}
+        construct(tail,new_node)
+      true ->
+        new_node=%{value: head, left: left, right: right}
+        construct(tail,new_node)
+
+    end
+
+
+    new_tree
+  end
+  #Generate-and-test paradigm
+  def sym_cbal_trees(n), do: cbal_tree(n) |> Enum.filter(fn tree -> symmetric(tree) end)
+
+
+
+
+
+
+
 end
-IO.inspect(BalancedBinaryTree.cbal_tree(2))

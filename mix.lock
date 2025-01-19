@@ -1,0 +1,3 @@
+%{
+  "graphvix": {:hex, :graphvix, "1.1.0", "07585df0c47697ca686f0df271d95b7e15fd7ae9ea6fdff83d42ba507380f684", [:mix], [], "hexpm", "f7aa28f22f65332548a5d05ca6c92d1e1c9c5ce19a36803c4e82d59c322e58aa"},
+}
