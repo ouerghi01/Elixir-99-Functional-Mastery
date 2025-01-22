@@ -12,13 +12,17 @@ defmodule ArithmeticProcessing do
       iex> ArithmeticProcessing.is_prime(4)
       false
   """
+  def is_prime(0), do: false
+  def is_prime(1), do: false
+  def is_prime(2), do: true
+
   def is_prime(n) do
     cond do
-      n < 2 -> false
-      rem(n,2) == 0 -> false
+      rem(n, 2) == 0 -> false
       true -> true
     end
   end
+
   @doc """
   Returns a list of prime numbers within the given range.
 
@@ -48,27 +52,32 @@ defmodule ArithmeticProcessing do
   def prime_numbers_in_range(a, b) when a > b do
     raise("it must be start_range < end_range")
   end
+
   def prime_numbers_in_range(a, b) when a == b do
     if is_prime(a), do: [a], else: []
   end
+
   def prime_numbers_in_range(a, b) when a < b do
     Enum.filter(a..b, fn x -> is_prime(x) end)
   end
 
   def goldbach(k) do
     k_primes = prime_numbers_in_range(2, k)
+
     Enum.find_value(k_primes, fn p ->
       q = k - p
-      if is_prime(q) && Enum.member?(k_primes,q) , do: [p,q], else: nil
+      if is_prime(q) && Enum.member?(k_primes, q), do: [p, q], else: nil
     end)
   end
-  def goldbach_list(a,b) when  a < b do
-    even_numbers = a .. b |> Enum.filter(fn x -> rem(x,2) ==0  end)
-    for even <- even_numbers  do
-      IO.inspect(goldbach(even))
 
+  def goldbach_list(a, b) when a < b do
+    even_numbers = a..b |> Enum.filter(fn x -> rem(x, 2) == 0 end)
+
+    for even <- even_numbers do
+      IO.inspect(goldbach(even))
     end
   end
+
   def gcd(n, m), do: Integer.gcd(n, m)
 
   @doc """
@@ -153,10 +162,11 @@ defmodule PrimeFactors do
   def phi(m) do
     prime_factors_mult(m)
     |> Enum.reduce(1, fn [p, m], acc ->
-      acc * (p - 1) * :math.pow(p, m - 1) |> round()
+      (acc * (p - 1) * :math.pow(p, m - 1)) |> round()
     end)
   end
 end
+
 defmodule Compare do
   def compare_totient_phi do
     time_now = :os.system_time(:millisecond)
@@ -179,5 +189,4 @@ defmodule Compare do
     IO.inspect(diff1)
     IO.inspect(diff2)
   end
-
 end
