@@ -16,9 +16,11 @@ defmodule BinarytreesTest do
         left: nil
       }
     }
-    assert Binarytrees.isTree(tree, false) == true
+
+    assert Binarytrees.isTree(tree) == true
   end
 
+  @tag mustrun: true
   test "invalid tree with missing left key" do
     invalid_tree = %{
       value: 1,
@@ -36,7 +38,8 @@ defmodule BinarytreesTest do
         }
       }
     }
-    assert Binarytrees.isTree(invalid_tree, false) == false
+
+    assert Binarytrees.isTree(invalid_tree) == false
   end
 
   test "tree with only root node" do
@@ -45,7 +48,8 @@ defmodule BinarytreesTest do
       left: nil,
       right: nil
     }
-    assert Binarytrees.isTree(tree, false) == true
+
+    assert Binarytrees.isTree(tree) == true
   end
 
   test "tree with only left child" do
@@ -58,7 +62,8 @@ defmodule BinarytreesTest do
       },
       right: nil
     }
-    assert Binarytrees.isTree(tree, false) == true
+
+    assert Binarytrees.isTree(tree) == true
   end
 
   test "tree with only right child" do
@@ -71,9 +76,11 @@ defmodule BinarytreesTest do
         right: nil
       }
     }
-    assert Binarytrees.isTree(tree, false) == true
+
+    assert Binarytrees.isTree(tree) == true
   end
 
+  @tag mustrun: true
   test "invalid tree with missing right key" do
     invalid_tree = %{
       value: 1,
@@ -84,6 +91,7 @@ defmodule BinarytreesTest do
       }
       # missing right key
     }
-    assert Binarytrees.isTree(invalid_tree, false) == false
+
+    assert Binarytrees.isTree(invalid_tree) == false
   end
 end
