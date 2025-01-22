@@ -3688,3 +3688,1323 @@ Lexical is compatible with the following versions of Elixir:
   >= 1.17.0
   >= 1.17.0-rc
 
+20:07:52.637 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:07:52.637 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:07:52.638 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:07:52.638 [info] Application logger started at :nonode@nohost
+20:07:53.797 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:08:40.316 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:08:40.316 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:08:40.316 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:08:40.316 [info] Application logger started at :nonode@nohost
+20:08:41.496 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:09:49.885 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:09:49.885 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:49.885 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:49.886 [info] Application logger started at :nonode@nohost
+20:09:51.044 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:09:52.841 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:09:52.841 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:52.841 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:52.842 [info] Application logger started at :nonode@nohost
+20:09:53.999 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:09:55.078 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:09:55.078 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:55.078 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:09:55.078 [info] Application logger started at :nonode@nohost
+20:09:56.227 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:04.379 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:04.379 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:04.379 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:04.379 [info] Application logger started at :nonode@nohost
+20:10:05.574 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:06.156 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:06.156 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:06.157 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:06.157 [info] Application logger started at :nonode@nohost
+20:10:07.350 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:08.093 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:08.093 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:08.093 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:08.093 [info] Application logger started at :nonode@nohost
+20:10:09.268 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:14.801 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:14.801 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:14.801 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:14.801 [info] Application logger started at :nonode@nohost
+20:10:16.112 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:17.245 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:17.245 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:17.245 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:17.245 [info] Application logger started at :nonode@nohost
+20:10:18.410 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:19.327 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:19.327 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:19.327 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:19.327 [info] Application logger started at :nonode@nohost
+20:10:20.577 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:23.588 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:23.588 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:23.588 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:23.588 [info] Application logger started at :nonode@nohost
+20:10:24.771 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:26.309 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:26.309 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:26.309 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:26.309 [info] Application logger started at :nonode@nohost
+20:10:27.476 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:29.012 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:29.012 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:29.012 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:29.012 [info] Application logger started at :nonode@nohost
+20:10:30.208 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:33.122 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:33.122 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:33.122 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:33.122 [info] Application logger started at :nonode@nohost
+20:10:34.286 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:35.423 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:35.423 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:35.423 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:35.424 [info] Application logger started at :nonode@nohost
+20:10:36.644 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:38.252 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:38.252 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:38.252 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:38.252 [info] Application logger started at :nonode@nohost
+20:10:39.405 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:44.488 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:44.488 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:44.488 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:44.488 [info] Application logger started at :nonode@nohost
+20:10:45.710 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:46.306 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:46.306 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:46.306 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:46.306 [info] Application logger started at :nonode@nohost
+20:10:47.534 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:55.220 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:55.220 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:55.220 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:55.220 [info] Application logger started at :nonode@nohost
+20:10:56.315 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:10:59.810 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:10:59.810 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:59.810 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:10:59.810 [info] Application logger started at :nonode@nohost
+20:11:01.026 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:02.060 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:02.060 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:02.061 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:02.061 [info] Application logger started at :nonode@nohost
+20:11:03.300 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:08.465 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:08.465 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:08.465 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:08.465 [info] Application logger started at :nonode@nohost
+20:11:09.614 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:11.713 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:11.713 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:11.713 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:11.714 [info] Application logger started at :nonode@nohost
+20:11:12.891 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:13.697 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:13.697 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:13.697 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:13.697 [info] Application logger started at :nonode@nohost
+20:11:14.913 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:15.793 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:15.793 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:15.793 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:15.793 [info] Application logger started at :nonode@nohost
+20:11:16.960 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:19.221 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:19.221 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:19.221 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:19.221 [info] Application logger started at :nonode@nohost
+20:11:20.434 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:21.024 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:21.024 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:21.024 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:21.025 [info] Application logger started at :nonode@nohost
+20:11:22.229 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:24.515 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:24.516 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:24.516 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:24.516 [info] Application logger started at :nonode@nohost
+20:11:25.742 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:26.977 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:26.977 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:26.977 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:26.977 [info] Application logger started at :nonode@nohost
+20:11:28.226 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:28.994 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:28.994 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:28.994 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:28.994 [info] Application logger started at :nonode@nohost
+20:11:30.167 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:32.405 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:32.405 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:32.405 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:32.405 [info] Application logger started at :nonode@nohost
+20:11:33.530 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:44.147 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:44.148 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:44.148 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:44.148 [info] Application logger started at :nonode@nohost
+20:11:45.265 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:11:59.029 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:11:59.029 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:59.029 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:11:59.029 [info] Application logger started at :nonode@nohost
+20:12:00.160 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:12:01.157 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:12:01.157 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:01.157 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:01.157 [info] Application logger started at :nonode@nohost
+20:12:02.362 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:12:04.219 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:12:04.219 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:04.220 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:04.220 [info] Application logger started at :nonode@nohost
+20:12:05.395 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:12:07.774 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:12:07.774 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:07.774 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:07.774 [info] Application logger started at :nonode@nohost
+20:12:08.888 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:12:10.869 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:12:10.869 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:10.869 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:10.869 [info] Application logger started at :nonode@nohost
+20:12:11.985 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:12:14.350 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:12:14.350 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:14.350 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:12:14.350 [info] Application logger started at :nonode@nohost
+20:12:15.493 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:13:08.861 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:13:08.862 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:08.862 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:08.862 [info] Application logger started at :nonode@nohost
+20:13:10.060 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:13:10.772 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:13:10.772 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:10.772 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:10.772 [info] Application logger started at :nonode@nohost
+20:13:11.926 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:13:12.847 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:13:12.847 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:12.847 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:12.848 [info] Application logger started at :nonode@nohost
+20:13:13.997 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:13:15.477 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:13:15.477 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:15.477 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:15.477 [info] Application logger started at :nonode@nohost
+20:13:17.025 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+20:13:34.933 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+20:13:34.933 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:34.933 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+20:13:34.933 [info] Application logger started at :nonode@nohost
+20:13:36.332 [error] FATAL: Lexical is not compatible with Elixir 1.18.1
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
