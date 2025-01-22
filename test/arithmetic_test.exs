@@ -21,8 +21,8 @@ defmodule ArithmeticProcessingTest do
   end
 
   test "coprime/2" do
-    assert ArithmeticProcessing.coprime(13, 27) == "yes"
-    assert ArithmeticProcessing.coprime(12, 18) == "No"
+    assert ArithmeticProcessing.coprime(13, 27) == true
+    assert ArithmeticProcessing.coprime(12, 18) == false
   end
 
   test "totient_phi/1" do
@@ -36,22 +36,27 @@ defmodule PrimeFactorsTest do
   alias PrimeFactors
 
   test "generate/1" do
-    assert PrimeFactors.generate(315) == [7, 5, 3, 3]
-    assert PrimeFactors.generate(60) == [5, 3, 2, 2]
+    assert PrimeFactors.generate(315) == [3, 3, 5, 7]
+    assert PrimeFactors.generate(60) == [2, 2, 3, 5]
   end
 
   test "prime_factors_mult/1" do
     assert PrimeFactors.prime_factors_mult(315) == [[3, 2], [5, 1], [7, 1]]
     assert PrimeFactors.prime_factors_mult(60) == [[2, 2], [3, 1], [5, 1]]
   end
+
   test "PrimeFactors.phi/1" do
     assert PrimeFactors.phi(9) == 6
     assert PrimeFactors.phi(10) == 4
   end
+
   test "gray/1" do
+    case :global.whereis_name(Logic) do
+      :undefined -> Logic.start_link()
+      _ -> :ok
+    end
+
     assert Logic.gray(1) == [0, 1]
     assert Logic.gray(3) == ["000", "001", "011", "010", "110", "111", "101", "100"]
-
   end
-
 end

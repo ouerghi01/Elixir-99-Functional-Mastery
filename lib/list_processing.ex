@@ -1,11 +1,10 @@
 defmodule Solutions do
   # Find the last box of a list.
-  def p01(list) do
-    if(length(list) == 0) do
-      raise("Wait !!!")
-    else
-      Enum.at(list, -1)
-    end
+  def p01([]), do: raise("Wait !!!")
+  def p01([h | []]), do: h
+
+  def p01([_h | t]) do
+    p01(t)
   end
 
   @spec p02(list()) :: [...]
